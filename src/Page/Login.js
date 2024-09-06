@@ -1,51 +1,24 @@
 import { SiAlgorand } from "react-icons/si";
-import "./Login.css";
+import "./Register.css";
 import { useState } from "react";
-import {user2} from "../Page/Api";
+// import {user2} from "../Page/Api";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 
 const Login=()=>{
-const [mobile,setMobile] = useState(" ");
-const [name,setName] = useState(" ");
+const navigate = useNavigate();
 
-const [email,setEmail] = useState(" ");
-const [mesage,setMesage] = useState("");
+const goRegister=()=>{
+    navigate("/")
+}
+const handleLogin=()=>{
+navigate("/home")
+}
 
 
-    const onDataSubmit=(e)=>{
-        window.location.href="/home"
-        e.preventDefault();
-        const user = {
-            mobile,
-            name,
-            email
-        }
-        console.log(user);
-        // user2(user)  
-        // .then(res=>{
-        //     console.log(res.data);
-        // })   
-        // .catch(err=>{
-        //     console.log(err.response.data);
-        // })
-
-        
-      
-    }
-
-    const handleEmail=(e)=>{
-setEmail(e.tarrget)
-
-    }
-    const handleMobile=(e)=>{
-        setMobile(e.target.value)
-    }
-    const handleName=(e)=>{
-        setName(e.target.value)
-    }
     return (
         <div className="login">
         <div className="log">
@@ -62,16 +35,14 @@ setEmail(e.tarrget)
 
         <div className="log-3">
         <button>Login</button>
-        <button>Register</button>
+        <button onClick={goRegister} >Register</button>
         </div>
 
-        <form onSubmit={onDataSubmit}>
-            <input onChange={handleMobile} value={mobile} type="text" placeholder="Ener Mobile"></input>
-            <input onChange={handleName} value={name} type="text" placeholder="Name"></input>
-            <input onChange={handleEmail} value={email} type="text" placeholder="Email"></input>
-            <button>Send OTP</button>
+        <form >
+            <input style={{marginTop:"80px", position:"relative"}} type="text" placeholder="Mobile Number"></input>
+            <button onClick={handleLogin} style={{marginTop:"200px", position:"absolute"}} >Send OTP</button>
         </form>
-        <div style={{textAlign:"center", marginTop:"10px", fontWeight:"600", color:"red"}}>{mesage}</div>
+        <div style={{textAlign:"center", marginTop:"10px", fontWeight:"600", color:"red"}}></div>
         </div>
 
         <div className="log-4">
