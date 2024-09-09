@@ -1,6 +1,10 @@
 import Carosal from "./Carosal";
 import Carosal2 from "./Carosal2";
 import Nabvar from "./Nabvar";
+import Card from "./Card";
+import FilterCard from "./FilterCard";
+import Footer from "./Footer";
+
 
 
 
@@ -13,7 +17,9 @@ const Home=()=>{
         <div>
 <Nabvar/>
 <Carosal2/>
-<Carosal/>
+<Card/>
+<FilterCard/>
+<Footer/>
         </div>
     )
 }

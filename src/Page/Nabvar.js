@@ -7,6 +7,8 @@ import { FiShoppingCart } from "react-icons/fi";
 import Carosal2 from "./Carosal2";
 import Carosal from "./Carosal";
 // import Carosal from "./Carosal";
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -14,6 +16,18 @@ import Carosal from "./Carosal";
 
 
 const Nabvar=()=>{
+const navigate = useNavigate();
+const navLogin=()=>{
+    navigate("/login")
+}
+const navRegister=()=>{
+    navigate("/")
+}
+
+
+
+
+
     return(
         <div className="nav-1">
            
@@ -36,8 +50,8 @@ const Nabvar=()=>{
 
 <span style={{color:"black", fontSize:"22px"}}><FiShoppingCart /></span>
 <span style={{color:"black", fontSize:"15px"}}>Cart</span>
-<span style={{color:"black", fontSize:"15px"}}>LogIn</span>
-<span style={{color:"black", fontSize:"15px"}}>Register</span>
+<span onClick={navLogin} style={{color:"black", fontSize:"15px", cursor:"pointer"}}>LogIn</span>
+<span onClick={navRegister} style={{color:"black", fontSize:"15px",cursor:"pointer"}}>Register</span>
 
         </div>
 
