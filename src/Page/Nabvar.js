@@ -8,6 +8,7 @@ import Carosal2 from "./Carosal2";
 import Carosal from "./Carosal";
 // import Carosal from "./Carosal";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 
 
@@ -15,7 +16,14 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Nabvar=({handleAddCart})=>{
+const Nabvar=({})=>{
+const [click , setClick] = useState(0);
+const handleShowData=()=>{
+    setClick(click+1);
+}
+
+
+
 const navigate = useNavigate();
 const navLogin=()=>{
     navigate("/login")
@@ -49,7 +57,7 @@ const navRegister=()=>{
 </div>
 
 <span style={{color:"black", fontSize:"22px"}}><FiShoppingCart /></span>
-<strike>{2}</strike>
+<strike>{click}</strike>
 <span style={{color:"black", fontSize:"15px"}}>Cart</span>
 <span onClick={navLogin} style={{color:"black", fontSize:"15px", cursor:"pointer"}}>LogIn</span>
 <span onClick={navRegister} style={{color:"black", fontSize:"15px",cursor:"pointer"}}>Register</span>

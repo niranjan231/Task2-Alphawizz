@@ -20,9 +20,9 @@ const Footer=()=>{
 </div>
 
 <div className="footer-2">
-< FaInstagramSquare style={{width:"40", height:"40px", marginRight:"20px"}} />
-<FaYoutube style={{width:"40", height:"40px", marginLeft:"20px"}} />
-<CiTwitter style={{width:"40", height:"40px", marginLeft:"20px"}} />
+< FaInstagramSquare style={{width:"40", height:"40px", marginRight:"20px", cursor:"pointer"}} />
+<FaYoutube style={{width:"40", height:"40px", marginLeft:"20px",cursor:"pointer"}} />
+<CiTwitter style={{width:"40", height:"40px", marginLeft:"20px",cursor:"pointer"}} />
 </div>
 </div>
 
