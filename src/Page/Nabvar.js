@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Nabvar=()=>{
+const Nabvar=({handleAddCart})=>{
 const navigate = useNavigate();
 const navLogin=()=>{
     navigate("/login")
@@ -38,7 +38,7 @@ const navRegister=()=>{
             </div>
 <div className="nav-2">
     <span style={{}}><CiLocationOn /></span>
-    <input  placeholder="Location Search" type="text"></input> |
+    <input   placeholder="Location Search" type="text"></input> |
     <span><CiSearch /></span>
     <input placeholder="Search Restorant" type="text"></input>
 </div>
@@ -49,6 +49,7 @@ const navRegister=()=>{
 </div>
 
 <span style={{color:"black", fontSize:"22px"}}><FiShoppingCart /></span>
+<strike>{2}</strike>
 <span style={{color:"black", fontSize:"15px"}}>Cart</span>
 <span onClick={navLogin} style={{color:"black", fontSize:"15px", cursor:"pointer"}}>LogIn</span>
 <span onClick={navRegister} style={{color:"black", fontSize:"15px",cursor:"pointer"}}>Register</span>

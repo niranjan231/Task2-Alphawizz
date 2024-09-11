@@ -4,6 +4,8 @@ import Nabvar from "./Nabvar";
 import Card from "./Card";
 import FilterCard from "./FilterCard";
 import Footer from "./Footer";
+import "./Home.css";
+
 
 
 
@@ -15,7 +17,7 @@ import Footer from "./Footer";
 const Home=()=>{
     return (
         <div>
-<Nabvar/>
+            <div className="nabvar-15" ><Nabvar/></div>
 <Carosal2/>
 <Card/>
 <FilterCard/>

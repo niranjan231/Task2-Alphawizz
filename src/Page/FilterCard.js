@@ -1,105 +1,58 @@
 import "./FilterCard.css";
-import { Link } from "react-router-dom";
-import { IoLocationOutline } from "react-icons/io5";
-import { CiStar } from "react-icons/ci";
+import data from "./data";
+import { CiLocationOn } from "react-icons/ci";
+import { FaRegStar } from "react-icons/fa6";
+
 
 
 
 
 
 const FilterCard=()=>{
-    return (
-        <>
-        <div className="filter-1">
-           <div><h3>Restaurant</h3>
-           <p>Login Page with React and Node Js + Email </p>
-           </div>
-
-<div>
-<ul>
-    <Link to="" >Veg & Non Veg</Link>
-    <Link to="">Non Veg</Link>
-    <Link to="">Veg</Link>
-</ul>
- </div>    
+    console.log(data);
+    return(
+        <div className="filter-10">
+        <div className="filter-11">
+            <div className="filter-12">
+            <h1>Restorant</h1>
+            <p>Here's an interesting job that </p>
+            </div>
+            <div filter-13>
+                <button className="filter-btn1">Veg & non Veg</button>
+                <button className="filter-btn2">veg</button>
+                <button className="filter-btn3">Non veg</button>
+            </div>
         </div>
 
 
-<div className="ft-1">
-<div className="filterCard-1">
-    <img src="https://wallpapercave.com/wp/wp9465718.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
+<div className="filter-17">
+{
+    data.map((item1)=>{
+return  <div className="filter-14">
+<div>
+    <img src={item1.profile_path}></img>
+</div>
+<div className="filter-15">
+    <div className="filter-16">
+    <h3>{item1.name}</h3>
+    <p><FaRegStar /></p>
     </div>
 </div>
-<div className="filterCard-1">
-    <img src="https://images2.alphacoders.com/912/thumb-1920-912814.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
+<div>
+    <p>(veg Non veg Restorant)</p>
 </div>
-<div className="filterCard-1">
-    <img src="https://getwallpapers.com/wallpaper/full/6/0/c/580326.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
-</div>
-<div className="filterCard-1">
-    <img src="https://wallpapercave.com/wp/wp8746199.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
-</div>
-<div className="filterCard-1">
-    <img src="https://images3.alphacoders.com/735/thumb-1920-735453.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
-</div>
-<div className="filterCard-1">
-    <img src="https://tse4.mm.bing.net/th?id=OIP.JhEebFrhAE4tJHj--3FJ8AHaEK&pid=Api&P=0&h=180"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
-</div>
-<div className="filterCard-1">
-    <img src="https://s1.1zoom.me/b5050/759/Fruit_Vegetables_Tomatoes_Pepper_Grapes_Onion_512572_1920x1080.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
-</div>
-<div className="filterCard-1">
-    <img src="https://wallpapercave.com/wp/wp9465718.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
-</div>
-<div className="filterCard-1">
-    <img src="https://wallpapercave.com/wp/wp9465718.jpg"></img>
-    <div className="filtercard-2"><p>Sadaanand exicutive</p>
-    <span>(veg non-veg Restaurant)</span>
-    <span><IoLocationOutline /></span>
-    <span className="filterCard-span"><CiStar /></span>
-    </div>
+<div className="filter-18">
+<CiLocationOn />{item1.location}
 </div>
 </div>
-        </>
+
+
+    })
+}
+</div>
+
+
+        </div>
     )
 }
 export default FilterCard;
