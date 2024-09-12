@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.card2-1{
+    width: 330px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px rgb(223, 214, 214);
+    margin: 30px;
+}
+.card2-1 img{
+    width: 330px;
+    border-radius: 20px;
+    height: 250px;
+}
+.card2-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card2-3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-right: 17px;
+}
+.card2-3 h5{
+    width: 137px;
+    height: 35px;
+    border: 2px solid rgba(255, 0, 0, 0.605);
+    color: rgba(255, 0, 0, 0.664);
+    text-align: center;
+    border-radius: 10px;
+}
+.card2-3 p{
+    font-weight: 750;
+}
+.card2-2 span{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(225, 149, 18);
+}
+.card2-5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+.card2-20{
+    background-image: url("https://wallpapers.com/images/hd/best-food-background-qhw8velp09qtarr8.jpg");
+    width: 100vw;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+}
+.card2-20 h2{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 150px;
+margin-left: 500px;
+cursor: pointer;
+}

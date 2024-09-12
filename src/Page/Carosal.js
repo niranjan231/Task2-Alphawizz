@@ -1,4 +1,9 @@
 import "./Carosal.css";
+import { GrPrevious } from "react-icons/gr";
+import { GrNext } from "react-icons/gr";
+import data from "./data";
+import data2 from "../data2";
+
 
 
 
@@ -6,28 +11,16 @@ import "./Carosal.css";
 
 const Carosal=()=>{
     return (
-        <div>
-            <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://wallpaperaccess.com/full/3973247.jpg" class="d-block w-100" alt="..." />
-    </div>
-    <div class="carousel-item">
-      <img src="https://i.pinimg.com/originals/87/5a/ad/875aad71ac2efaedb954461c4a123ff2.jpg" class="d-block w-100" alt="..." />
-    </div>
-    <div class="carousel-item">
-      <img src="https://wallpapercave.com/wp/wp1929443.jpg" class="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+        <div className="cars-1">
+<div className="cars-2" ><GrPrevious /></div>
+<div className="cars-img">
+{
+  data2.map((item2)=>{
+    return <img src={item2.profile_path}></img>
+  })
+}
 </div>
+<div className="cars-2"><GrNext /></div>
         </div>
     )
 }

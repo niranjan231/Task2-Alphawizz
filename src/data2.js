@@ -1,8 +1,8 @@
-const data =
+const data2 =
    [ 
       {
         id: "1",
-        price: 225,
+        movie_id: 1,
         name: "Burger1",
         original_name: "Kim Director",
         popularity: "9.186",
@@ -13,7 +13,7 @@ const data =
       },
       {
         id: 2,
-        price: 278,
+        movie_id: 2,
         name: "Burger2",
         original_name: "Andy Richter",
         popularity: "8.088",
@@ -24,7 +24,7 @@ const data =
       },
       {
         id: 3,
-        price: 297,
+        movie_id: 3,
         name: "Burger3",
         original_name: "Erica Leerhsen",
         popularity: "6.17",
@@ -35,8 +35,8 @@ const data =
       },
       {
         id: 3,
-        price: 678,
-         name: "Burger4",
+        movie_id: 11531,
+        name: "Burger4",
         original_name: "Armen Garo",
         popularity: "5.43",
         profile_path: "http://cdn.wallpapersafari.com/35/50/V9REpY.jpg",
@@ -46,7 +46,7 @@ const data =
       },
       {
         id: 4,
-        price: 289,
+        movie_id: 11531,
         name: "Burger5",
         original_name: "Tristine Skyler",
         popularity: "5.395",
@@ -57,7 +57,7 @@ const data =
       },
       {
         id: 5,
-        price: 256,
+        movie_id: 11531,
         name: "Burger6",
         original_name: "Conan O'Brien",
         popularity: "5.052",
@@ -68,7 +68,7 @@ const data =
       },
       {
         id: 6,
-        price: 298,
+        movie_id: 2,
         name: "Burger7",
         original_name: "Raynor Scheine",
         popularity: "4.764",
@@ -79,7 +79,7 @@ const data =
       },
       {
         id: 7,
-        price: 275,
+        movie_id: 11531,
         name: "Burger8",
         original_name: "Martin Pfefferkorn",
         popularity: "3.683",
@@ -90,7 +90,7 @@ const data =
       },
       {
         id: 8,
-        price: 675,
+        movie_id: 11531,
         name: "Burger9",
         original_name: "Lanny Flaherty",
         popularity: "3.683",
@@ -98,38 +98,8 @@ const data =
         location: "Bengluru",
         created_at: null,
         updated_at: null
-      },
-      {
-        id: 9,
-        price: 154,
-        name: "Burger10",
-        original_name: "Rick Kain",
-        popularity: "2.977",
-        profile_path: "https://scitechdaily.com/images/Fast-Food-Burger-Fries-Drink-Combo.jpg",
-        location: "Chandigrah",
-        created_at: null,
-        updated_at: null
-      },
-      {
-        id: 10,
-        price: 780,
-        name: "Burger11",
-        original_name: "Joe Berlinger",
-        popularity: "2.928",
-        profile_path: "https://e1.pxfuel.com/desktop-wallpaper/936/137/desktop-wallpaper-3840x2400-burger-hamburger-french-fries-fast-fast-food.jpg",
-        location: "Patna",
-        created_at: null,
-        updated_at: null
-      },
-      {
-        id: 11,
-        price: 345,
-        name: "Burger12",
-        original_name: "Jeffrey Donovan",
-        popularity: "16.791",
-        profile_path: "https://www.teahub.io/photos/full/33-332074_pizza-fast-food.jpg",
-        
-      }]
+      }
+     ]
 
       
-export default data;
+export default data2;

@@ -9,6 +9,8 @@ import Carosal from "./Carosal";
 // import Carosal from "./Carosal";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import data from "./data";
+
 
 
 
@@ -21,6 +23,9 @@ const [click , setClick] = useState(0);
 const handleShowData=()=>{
     setClick(click+1);
 }
+const handleAddResto=()=>{
+    navigate("/addresto")
+}
 
 
 
@@ -31,6 +36,9 @@ const navLogin=()=>{
 const navRegister=()=>{
     navigate("/")
 }
+const handleHomeExit=()=>{
+    navigate("/home")
+}
 
 
 
@@ -38,14 +46,12 @@ const navRegister=()=>{
 
     return(
         <div className="nav-1">
-           
             <span><IoFastFoodOutline /></span>
             <div>
-            <h1>AlPHA</h1>
+            <h1 onClick={handleHomeExit}>AlPHA</h1>
             <p>FOOD PLATINUM</p>
             </div>
 <div className="nav-2">
-    <span style={{}}><CiLocationOn /></span>
     <input   placeholder="Location Search" type="text"></input> |
     <span><CiSearch /></span>
     <input placeholder="Search Restorant" type="text"></input>
@@ -53,11 +59,10 @@ const navRegister=()=>{
 
 <div className="nav-3">
 <span><GrRestaurant /></span>
-<p>Add Restaurant</p>
+<p onClick={handleAddResto}>Add Restaurant</p>
 </div>
 
 <span style={{color:"black", fontSize:"22px"}}><FiShoppingCart /></span>
-<strike>{click}</strike>
 <span style={{color:"black", fontSize:"15px"}}>Cart</span>
 <span onClick={navLogin} style={{color:"black", fontSize:"15px", cursor:"pointer"}}>LogIn</span>
 <span onClick={navRegister} style={{color:"black", fontSize:"15px",cursor:"pointer"}}>Register</span>

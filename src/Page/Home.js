@@ -5,6 +5,8 @@ import Card from "./Card";
 import FilterCard from "./FilterCard";
 import Footer from "./Footer";
 import "./Home.css";
+import AddResto from "./AddResto";
+import FilterCard2 from "./FilterCard2";
 
 
 
@@ -19,9 +21,16 @@ const Home=()=>{
         <div>
             <div className="nabvar-15" ><Nabvar/></div>
 <Carosal2/>
+<Carosal/>
 <Card/>
 <FilterCard/>
 <Footer/>
+
+
+
+
+
+
         </div>
     )
 }

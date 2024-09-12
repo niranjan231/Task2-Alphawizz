@@ -2,9 +2,32 @@
     margin: 0;
     padding: 0;
 }
-img{
+.cars-1{
     width: 100vw;
-    height: 500px;
-    background-size: cover;
-    object-fit:cover;
+    height: 200px;
+background-color: white;
+display: flex;
+justify-content: space-between;
+position: relative;
+}
+.cars-2{
+    font-weight: 800;
+    font-size: 40px;
+    color: black;
+   margin-top: 50px;
+}
+.cars-img{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100vw;
+}
+.cars-img img{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 50%;
 }

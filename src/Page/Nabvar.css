@@ -34,6 +34,7 @@ strike{
     margin-top: 10px;
     font-weight: 800;
     position: relative;
+    cursor: pointer;
 }
 .nav-1 p{
     font-size: 10px;
@@ -76,4 +77,5 @@ strike{
 .nav-3 p{
     color: rgba(255, 0, 0, 0.689);
    margin-top: 15px;
+   cursor: pointer;
 }

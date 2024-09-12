@@ -7,6 +7,9 @@ import Login from './Page/Login';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Page/Home';
 import Register from './Page/Register';
+import AddResto from './Page/AddResto';
+import FilterCard2 from './Page/FilterCard2';
+
 
 
 
@@ -17,6 +20,8 @@ function App() {
        <Route path='/'  element={<Register/>} />
        <Route path='/login' element={<Login/>}/>
        <Route path='/home' element={<Home/>}/>
+<Route path='/addresto' element={<AddResto/>}/>
+<Route path='/filtercard2' element={<FilterCard2/>}/>
       </Routes>
       {/* <Carosal/> */}
       {/* <Carosal2/> */}

@@ -16,14 +16,17 @@
     font-size: 40px;
     color: white;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .footer-1 h2{
     color: white;
     margin-top: 12px;
+    cursor: pointer;
     
 }
 .footer-1 p{
     color: white;
+    cursor: pointer;
     
 }
 .footer-2{
@@ -31,14 +34,17 @@
     display: flex;
     justify-content: space-evenly;
     margin-right: 75px;
+    cursor: pointer;
 }
 .footer-span{
     width: 30px;
     height: 40px;
+    cursor: pointer;
 }
 .footer-4{
     display: flex;
     margin-left: 60px;
+    cursor: pointer;
 }
 .footer-6{
     width: 100vw;
@@ -46,7 +52,8 @@
     background-color: rgba(0, 0, 0, 0.957);
     color: rgba(255, 255, 255, 0.594);
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    cursor: pointer;   
 }
 .footer-6 li{
     list-style: none;
@@ -57,6 +64,7 @@
     margin-right: 35px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 
 
 }

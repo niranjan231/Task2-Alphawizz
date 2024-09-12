@@ -3,6 +3,8 @@ import "./Register.css";
 import { useState } from "react";
 // import {user2} from "../Page/Api";
 import { useNavigate } from "react-router-dom";
+import Nabvar from "./Nabvar";
+
 
 
 
@@ -43,6 +45,8 @@ setEmail(e.tarrget)
         setName(e.target.value)
     }
     return (
+        <>
+        <Nabvar/>
         <div className="login">
         <div className="log">
         <div className="log-1">
@@ -74,6 +78,7 @@ setEmail(e.tarrget)
 <img className="log-img" src="https://akhilamaram.com/wp-content/uploads/2021/07/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash-scaled-e1626760021843.jpg"></img>
         </div>
         </div>
+        </>
     )
 }
 export default Register;

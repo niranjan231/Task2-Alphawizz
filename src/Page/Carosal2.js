@@ -10,7 +10,7 @@ const Carosal2=()=>{
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="http://www.pixelstalk.net/wp-content/uploads/2016/08/Desktop-Food-HD-Wallpapers-Free-Download.jpg" class="d-block w-100" alt="..." />
+      <img  src="https://supercurioso.com/wp-content/uploads/2023/04/persona-recibiendo-un-pedazo-de-pizza-de-pepperoni-con-queso.jpg_s1024x1024wisk20cokpgZ7WhSGy-697KHu_dT5N8dfYatJ7VWHouPzGmGBs.jpg" class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">
       <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Desktop-Food-HD-Wallpapers.jpg" class="d-block w-100" alt="..." />

@@ -2,6 +2,8 @@ import "./FilterCard.css";
 import data from "./data";
 import { CiLocationOn } from "react-icons/ci";
 import { FaRegStar } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -9,6 +11,11 @@ import { FaRegStar } from "react-icons/fa6";
 
 
 const FilterCard=()=>{
+    const navigate = useNavigate();
+    const handleBackBtn=()=>{
+        navigate("/filtercard2")
+    }
+
     console.log(data);
     return(
         <div className="filter-10">
@@ -28,7 +35,7 @@ const FilterCard=()=>{
 <div className="filter-17">
 {
     data.map((item1)=>{
-return  <div className="filter-14">
+return  <div onClick={handleBackBtn} className="filter-14">
 <div>
     <img src={item1.profile_path}></img>
 </div>
