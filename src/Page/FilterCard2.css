@@ -12,6 +12,9 @@
     box-shadow: 5px 5px 5px 5px rgb(223, 214, 214);
     margin: 30px;
 }
+.card2-1 h5{
+    cursor: pointer;
+}
 .card2-1 img{
     width: 330px;
     border-radius: 20px;

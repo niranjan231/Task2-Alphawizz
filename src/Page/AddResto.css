@@ -7,6 +7,23 @@
     justify-content:center;
     align-items: center;
 }
+.addresto-carosal{
+    width: 100vw;
+    height: 450px;
+    background-image: url("https://wallpapers.com/images/hd/best-food-background-qhw8velp09qtarr8.jpg");
+    background-size: cover;
+}
+.addresto-carosal button{
+    width: 240px;
+    height: 60px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top: 250px;
+    border: none;
+}
 .addresto-1{
     width: 60%;
     height: 280px;

@@ -9,6 +9,7 @@ import Home from './Page/Home';
 import Register from './Page/Register';
 import AddResto from './Page/AddResto';
 import FilterCard2 from './Page/FilterCard2';
+import Total from './Page/Total';
 
 
 
@@ -22,7 +23,8 @@ function App() {
        <Route path='/home' element={<Home/>}/>
 <Route path='/addresto' element={<AddResto/>}/>
 <Route path='/filtercard2' element={<FilterCard2/>}/>
-      </Routes>
+<Route path='/total' element={<Total/>}/>
+     </Routes>
       {/* <Carosal/> */}
       {/* <Carosal2/> */}
     </div>

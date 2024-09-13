@@ -30,6 +30,9 @@ const handleAddResto=()=>{
 
 
 const navigate = useNavigate();
+const handleCart1=()=>{
+    navigate("/filtercard2")
+}
 const navLogin=()=>{
     navigate("/login")
 }
@@ -63,7 +66,7 @@ const handleHomeExit=()=>{
 </div>
 
 <span style={{color:"black", fontSize:"22px"}}><FiShoppingCart /></span>
-<span style={{color:"black", fontSize:"15px"}}>Cart</span>
+<span onClick={handleCart1} style={{color:"black", cursor:"pointer",fontSize:"15px"}}>Cart</span>
 <span onClick={navLogin} style={{color:"black", fontSize:"15px", cursor:"pointer"}}>LogIn</span>
 <span onClick={navRegister} style={{color:"black", fontSize:"15px",cursor:"pointer"}}>Register</span>
 

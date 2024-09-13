@@ -24,7 +24,9 @@ const AddResto=()=>{
     return (
         <>
             <Nabvar/>
-            <Carosal2/>
+           <div className="addresto-carosal">
+            <button>Register your Restaurant</button>
+           </div>
         <div className="addresto">
         <div className="addresto-1">
           <div className="addresto-2">

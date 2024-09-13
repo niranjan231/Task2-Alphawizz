@@ -14,9 +14,13 @@ import Footer from "./Footer";
 
 const FilterCard2=()=>{ 
     const navigate = useNavigate()
+    const handleCartBTN=()=>{
+        navigate("/total")
+    }
     const handleHomeBtn=()=>{
         navigate("/home")
     }
+    
     return (
         <>
         <Nabvar/>
@@ -27,7 +31,7 @@ const FilterCard2=()=>{
             return   <div className="card2-1">
             <div><img src={item3.profile_path}></img></div>
                         <div className="card2-2"><h4>{item3.name}</h4><span><CiStar /></span></div>
-                        <div className="card2-3"><p>RS {item3.price}</p> <h5><IoCartOutline />Add to cart</h5></div>
+                        <div onClick={handleCartBTN} className="card2-3"><p>RS {item3.price}</p> <h5><IoCartOutline />Add to cart</h5></div>
                      </div>
         })
        }

@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import "./Home.css";
 import AddResto from "./AddResto";
 import FilterCard2 from "./FilterCard2";
+import Total from "./Total";
 
 
 
