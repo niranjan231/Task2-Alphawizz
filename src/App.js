@@ -10,6 +10,7 @@ import Register from './Page/Register';
 import AddResto from './Page/AddResto';
 import FilterCard2 from './Page/FilterCard2';
 import Total from './Page/Total';
+import CreatForm from './Page/CreatForm';
 
 
 
@@ -24,6 +25,7 @@ function App() {
 <Route path='/addresto' element={<AddResto/>}/>
 <Route path='/filtercard2' element={<FilterCard2/>}/>
 <Route path='/total' element={<Total/>}/>
+<Route path='/creatform' element={<CreatForm/>}/>
      </Routes>
       {/* <Carosal/> */}
       {/* <Carosal2/> */}

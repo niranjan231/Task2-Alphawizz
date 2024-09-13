@@ -11,13 +11,31 @@ import Nabvar from "./Nabvar";
 
 
 const Login=()=>{
-const navigate = useNavigate();
+    const [mobile , setMobile] = useState("")
+    const [err , setErr] = useState("  ")
+    const handleInputMobile=(e)=>{
+setMobile(e.target.value);
+if(mobile.length<10){
+   
+}
 
+    }
+const handleSubmitFormData=(e)=>{
+    e.preventDefault()
+    const user2 = {mobile}
+    console.log(user2);
+}
+
+
+
+
+
+const navigate = useNavigate();
 const goRegister=()=>{
     navigate("/")
 }
 const handleLogin=()=>{
-navigate("/home")
+// navigate("/home")
 }
 
 
@@ -42,8 +60,8 @@ navigate("/home")
         <button onClick={goRegister} >Register</button>
         </div>
 
-        <form >
-            <input style={{marginTop:"80px", position:"relative"}} type="text" placeholder="Mobile Number"></input>
+        <form onSubmit={handleSubmitFormData} >
+            <input style={{marginTop:"80px", position:"relative"}} onChange={handleInputMobile} value={mobile} type="text" placeholder="Mobile Number"></input>
             <button onClick={handleLogin} style={{marginTop:"200px", position:"absolute"}} >Send OTP</button>
         </form>
         <div style={{textAlign:"center", marginTop:"10px", fontWeight:"600", color:"red"}}></div>
@@ -53,6 +71,7 @@ navigate("/home")
 <img className="log-img" src="https://akhilamaram.com/wp-content/uploads/2021/07/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash-scaled-e1626760021843.jpg"></img>
         </div>
         </div>
+        <div>{err}</div>
         </>
     )
 }

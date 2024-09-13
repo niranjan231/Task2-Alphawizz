@@ -9,6 +9,8 @@ import { GiScooter } from "react-icons/gi";
 import { FaBorderAll } from "react-icons/fa";
 import Footer from "./Footer";
 import Carosal2 from "./Carosal2";
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -21,11 +23,15 @@ import Carosal2 from "./Carosal2";
 
 
 const AddResto=()=>{
+    const navigate = useNavigate()
+    const handleGoNext=()=>{
+        navigate("/creatform")
+    }
     return (
         <>
             <Nabvar/>
            <div className="addresto-carosal">
-            <button>Register your Restaurant</button>
+            <button onClick={handleGoNext}>Register your Restaurant</button>
            </div>
         <div className="addresto">
         <div className="addresto-1">

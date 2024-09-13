@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.CreatForm-1{
+    width: 100vw;
+    height: 400px;
+    background-image: url("https://wallpapers.com/images/hd/best-food-background-qhw8velp09qtarr8.jpg");
+    background-size: cover;
+    display: flex;
+    color: white;
+}
+.CreatForm-1 h2{
+ margin-left: 500px;
+ margin-top: 200px;
+ cursor: pointer;
+}
+.CreatForm-1 h3{
+    margin-top: 200px;
+    cursor: pointer;
+   }
+   .CreatForm-1 h4{
+    margin-top: 200px;
+    cursor: pointer;
+   }
+   .creatform-2{
+    width: 70%;
+    height: 230px;
+    background-color: rgba(165, 42, 42, 0.479);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 100px; */
+    
+   }
+   .creatform-3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+   }
+   .creatform-3 p{
+    text-align: center;
+    margin-top: 10px;
+   }
+   .creatfrom-4{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin-top: 25px;
+   }
